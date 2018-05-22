@@ -1,0 +1,10 @@
+language: python
+
+python:
+  - 3.6
+  - 3.7-dev
+
+install:
+  - pip3 install -r dev-requirements.txt
+script:
+  - flake8 --statistics --verbose *.py
