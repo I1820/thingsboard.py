@@ -36,7 +36,6 @@ def serial_read():
     if len(message) == 0 or message[0] != '@':
             return
     parts = message.split(',')
-    node = parts[0][1:]
     if parts[-1][0].isalpha():
         battery = 0
         parts[-1] = parts[-1][:-2]
