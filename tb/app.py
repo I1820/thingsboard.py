@@ -1,20 +1,17 @@
-# In The Name Of God
-# ========================================
-# [] File Name : app.py
-#
-# [] Creation Date : 22-05-2018
-#
-# [] Created By : Parham Alvani <parham.alvani@gmail.com>
-# =======================================
+'''
+app module contains the definition of ThingsBoard Application
+which is used for communication with ThingsBoard.
+'''
 
-import paho.mqtt.client as mqtt
-import threading
 import asyncio
 import json
+import threading
+
+import paho.mqtt.client as mqtt
 
 
 class ThingsBoardApp:
-    def __init__(self, access_token: str, tb_ip: str, tb_port: int=1883):
+    def __init__(self, access_token: str, tb_ip: str, tb_port: int = 1883):
         # MQTT Up and Running
         self.client = mqtt.Client()
         self.client.username_pw_set(access_token)
