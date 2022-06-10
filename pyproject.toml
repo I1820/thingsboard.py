@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "thingsboard.py"
+name = "thingsboard_py"
 version = "0.1.0"
 description = "Python client for ThingsBoard"
 authors = ["Parham Alvani <parham.alvani@gmail.com>"]
