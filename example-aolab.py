@@ -1,18 +1,9 @@
-# In The Name Of God
-# ========================================
-# [] File Name : example-aolab.py
-#
-# [] Creation Date : 23-05-2018
-#
-# [] Created By : Parham Alvani <parham.alvani@gmail.com>
-# =======================================
 import io
-import serial
 import sys
 
+import serial
 
 from tb.app import ThingsBoardApp
-
 
 token = 'DHT11_DEMO_TOKEN'
 
